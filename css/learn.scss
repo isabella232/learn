@@ -1,0 +1,127 @@
+#siteorigin-learn {
+
+	#siteorigin-learn-overlay {
+		z-index: 100005;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba( 0,0,0,0.6 );
+	}
+
+	#siteorigin-learn-dialog {
+		z-index: 100006;
+		box-sizing: border-box;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+
+		padding: 40px;
+		max-width: 640px + 80px;
+		margin-left: -( 640px + 80px ) / 2;
+
+		min-height: 400px;
+		margin-top: -200px;
+
+		background-color: #fff;
+
+		.poster-wrapper {
+			cursor: pointer;
+			display: block;
+			position: relative;
+
+			.main-poster {
+				width: 640px;
+				height: 360px;
+				display: block;
+			}
+
+			.play-button {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 80px;
+				height: 80px;
+
+				margin-top: -40px;
+				margin-left: -40px;
+
+				transition: opacity 0.35s;
+
+				opacity: 0;
+
+				&.displayed {
+					opacity: 1;
+				}
+			}
+		}
+
+		.video-iframe {
+
+			&, iframe {
+				width: 640px;
+				height: 360px;
+				display: block;
+			}
+		}
+
+		.learn-title {
+			text-align: center;
+			font-size: 1.5em;
+			color: #474747;
+			font-weight: normal;
+			margin: 25px 0;
+		}
+
+		.learn-description {
+			color: #666;
+			font-weight: 300;
+			margin: 25px 0;
+		}
+
+		.signup-form {
+			display: flex;
+			align-items: center;
+
+			.form-field {
+				flex: 2;
+				margin-right: 20px;
+
+				input {
+					padding: 5px;
+				}
+			}
+			.form-submit {
+				flex: 1;
+			}
+
+			input {
+				width: 100%;
+				display: block;
+			}
+
+		}
+
+		.form-description {
+			color: #777;
+			font-weight: 300;
+			margin-top: 15px;
+			text-align: center;
+			font-style: italic;
+			font-size: 0.95em;
+			line-height: 1em;
+		}
+
+		.learn-close {
+			margin: 30px auto 0 auto;
+			text-align: center;
+			display: block;
+			cursor: pointer;
+			font-weight: bold;
+			font-size: 0.9em;
+			color: #666;
+		}
+	}
+
+}
