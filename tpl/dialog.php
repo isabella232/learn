@@ -17,16 +17,19 @@ $user = wp_get_current_user();
 		<h3 class="learn-title"></h3>
 		<p class="learn-description"></p>
 
-		<form class="signup-form" method="post" action="<?php echo esc_url( SiteOrigin_Learn_Dialog::SUBMIT_URL ) ?>" target="_blank" >
+		<form class="signup-form" method="post" action="<?php echo esc_url( SiteOrigin_Learn_Dialog::SUBMIT_URL ) ?>" target="_blank" data-email-error="<?php esc_attr_e( 'Please enter a valid email', 'siteorigin-panels' ) ?>" >
 			<div class="form-field">
-				<input type="text" name="name" placeholder="<?php esc_attr_e( 'Your Name', 'siteorigin-panels' ) ?>" value="<?php echo ! empty( $user->data->display_name ) ? esc_attr( $user->data->display_name ) : '' ?>" />
+				<label><?php esc_attr_e( 'Your Name', 'siteorigin-panels' ) ?></label>
+				<input type="text" name="name" value="<?php echo ! empty( $user->data->display_name ) ? esc_attr( $user->data->display_name ) : '' ?>" />
 			</div>
 			<div class="form-field">
-				<input type="text" name="email" placeholder="<?php esc_attr_e( 'Your Name', 'siteorigin-panels' ) ?>" value="<?php echo ! empty( $user->data->user_email ) ? esc_attr( $user->data->user_email ) : '' ?>"  />
+				<label><?php esc_attr_e( 'Your Email', 'siteorigin-panels' ) ?></label>
+				<input type="text" name="email" value="<?php echo ! empty( $user->data->user_email ) ? esc_attr( $user->data->user_email ) : '' ?>"  />
 			</div>
 			<div class="form-submit">
-				<input type="submit" class="button-primary" />
+				<input type="submit" class="button-primary" value="<?php esc_attr_e( 'Sign Up', 'siteorigin-panels' ) ?>" />
 			</div>
+			<input type="hidden" name="course_id" value="" />
 		</form>
 		<div class="form-description"></div>
 

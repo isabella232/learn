@@ -18,17 +18,12 @@ jQuery( function( $ ){
 				.find( '.learn-title' ).text( course.title ).end()
 				.find( '.learn-description' ).html( course.description ).end()
 				.find( '.form-description' ).html( course.form_description ).end()
-			;
+				.find( 'input[name="course_id"]' ).val( courseId ).end();
 
 			dialog.css({
 				'margin-top': - dialog.outerHeight() / 2,
 				'margin-left': - dialog.outerWidth() / 2,
 			});
-
-			dialog.find( '.play-button' ).removeClass( 'displayed' );
-			setTimeout( function(){
-				dialog.find( '.play-button' ).addClass( 'displayed' );
-			}, 800 );
 		}
 	} );
 
@@ -40,7 +35,19 @@ jQuery( function( $ ){
 			.find( '.poster-wrapper' ).show();
 	} );
 
-	$( '#siteorigin-learn form' ).submit( function(){
+	$( '#siteorigin-learn form' ).submit( function( e ){
+		var $$ = $( this );
+
+		// Check the content
+		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		var email = $$.find( 'input[name="email"]' );
+
+		if( email.val() === '' || ! re.test( email.val() ) ) {
+			e.preventDefault();
+			alert( $$.data( 'email-error' ) );
+			return;
+		}
+
 		$( '#siteorigin-learn .learn-close' ).click();
 	} );
 

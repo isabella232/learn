@@ -17,9 +17,9 @@
 		top: 50%;
 		left: 50%;
 
-		padding: 40px;
-		max-width: 640px + 80px;
-		margin-left: -( 640px + 80px ) / 2;
+		padding: 30px;
+		max-width: 640px + 60px;
+		margin-left: -( 640px + 60px ) / 2;
 
 		min-height: 400px;
 		margin-top: -200px;
@@ -31,7 +31,7 @@
 			display: block;
 			position: relative;
 
-			.main-poster {
+			&, .main-poster {
 				width: 640px;
 				height: 360px;
 				display: block;
@@ -50,15 +50,14 @@
 				transition: opacity 0.35s;
 
 				opacity: 0;
+			}
 
-				&.displayed {
-					opacity: 1;
-				}
+			&:hover .play-button {
+				opacity: 1;
 			}
 		}
 
 		.video-iframe {
-
 			&, iframe {
 				width: 640px;
 				height: 360px;
@@ -71,29 +70,50 @@
 			font-size: 1.5em;
 			color: #474747;
 			font-weight: normal;
-			margin: 25px 0;
+			margin: 25px 0 20px 0;
 		}
 
 		.learn-description {
 			color: #666;
 			font-weight: 300;
-			margin: 25px 0;
+			margin: 20px auto;
+			width: 80%;
+			text-align: center;
 		}
 
 		.signup-form {
 			display: flex;
-			align-items: center;
+			align-items: flex-end;
+			padding: 20px;
+			background-color: #f8f8f8;
+			border: 1px solid #e0e0e0;
+			margin-top: 25px;
 
 			.form-field {
 				flex: 2;
 				margin-right: 20px;
 
+				label{
+					color: #666;
+					display: block;
+					margin-bottom: 8px;
+					text-align: center;
+					font-size: 0.9em;
+					font-weight: 500;
+				}
+
 				input {
-					padding: 5px;
+					padding: 6px 8px;
+					font-weight: 500;
+					color: #555;
 				}
 			}
 			.form-submit {
 				flex: 1;
+
+				input {
+					margin-bottom: 3px;
+				}
 			}
 
 			input {
@@ -114,7 +134,7 @@
 		}
 
 		.learn-close {
-			margin: 30px auto 0 auto;
+			margin: 20px auto 0 auto;
 			text-align: center;
 			display: block;
 			cursor: pointer;
