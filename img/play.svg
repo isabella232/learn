@@ -1,8 +1,9 @@
-<svg width="1282px" height="75px" viewBox="-1 645 1282 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="640px" height="38px" viewBox="0 682 640 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>Created with Sketch.</desc>
 	<defs></defs>
-	<g id="Player" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1.000000, 645.000000)">
-		<rect id="progress" fill-opacity="0.658599411" fill="#6E6E6E" x="0.870679256" y="0.113680697" width="1280.12932" height="74.8863193"></rect>
-		<rect id="button-wrapper" fill="#3B3B3B" x="0.870679256" y="0.113680697" width="99.0100022" height="74.8863193"></rect>
-		<path d="M40.5481694,22.2810105 C39.6931391,21.6920814 39,22.0599217 39,23.0939119 L39,52.5204207 C39,53.5583032 39.6949768,53.9209855 40.5481694,53.3333224 L61.2294094,39.0884658 C62.2567919,38.3808237 62.2569352,37.2336078 61.2294094,36.525867 L40.5481694,22.2810105 Z" id="button" fill="#FFFFFF"></path>
+	<g id="Player" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 682.000000)">
+		<rect id="progress" fill-opacity="0.658599411" fill="#6E6E6E" x="0" y="0" width="640" height="37.9424018"></rect>
+		<rect id="button-wrapper" fill="#3B3B3B" x="0" y="0" width="50" height="38"></rect>
+		<path d="M19.7849533,11.1423787 C19.3514356,10.8439879 19,11.0303603 19,11.5542487 L19,26.4636798 C19,26.9895403 19.3523673,27.1732993 19.7849533,26.87555 L30.2707614,19.658156 C30.7916651,19.2996173 30.7917378,18.7183613 30.2707614,18.3597726 L19.7849533,11.1423787 Z" id="button" fill="#FFFFFF"></path>
 	</g>
 </svg>
