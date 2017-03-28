@@ -43,7 +43,7 @@ class SiteOrigin_Learn_Dialog {
 	}
 
 	public function enqueue_scripts(){
-		wp_enqueue_script( 'siteorigin-learn', plugin_dir_url( __FILE__ ) . 'js/learn.js', array( 'jquery' ), false, true );
+		wp_enqueue_script( 'siteorigin-learn', plugin_dir_url( __FILE__ ) . 'js/learn' . ( WP_DEBUG ? '' : '.min' ) . '.js', array( 'jquery' ), false, true );
 		wp_enqueue_style( 'siteorigin-learn', plugin_dir_url( __FILE__ ) . 'css/learn.css', array( ) );
 
 		wp_localize_script( 'siteorigin-learn', 'soLearn', array(
