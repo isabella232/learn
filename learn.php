@@ -2,11 +2,11 @@
 
 class SiteOrigin_Learn_Dialog {
 
-	private $courses;
-	const SUBMIT_URL = 'https://siteorigin.com/wp-admin/admin-ajax.php?action=course_signup_submit';
+	private $lessons;
+	const SUBMIT_URL = 'https://siteorigin.com/wp-admin/admin-ajax.php?action=lesson_signup_submit';
 
 	function __construct(){
-		$this->courses = array();
+		$this->lessons = array();
 		add_action( 'admin_footer', array( $this, 'admin_footer' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ), 15 );
 	}
@@ -22,8 +22,8 @@ class SiteOrigin_Learn_Dialog {
 	 * @param $id
 	 * @param $data
 	 */
-	public function add_course( $id, $data ) {
-		$this->courses[$id] = $data;
+	public function add_lessons( $id, $data ) {
+		$this->lessons[$id] = $data;
 	}
 
 	/**
@@ -31,8 +31,8 @@ class SiteOrigin_Learn_Dialog {
 	 *
 	 * @return mixed|void
 	 */
-	public function get_courses(){
-		return apply_filters( 'siteorigin_learn_courses', $this->courses );
+	public function get_lessons(){
+		return apply_filters( 'siteorigin_learn_lessons', $this->lessons );
 	}
 
 	/**
@@ -47,11 +47,7 @@ class SiteOrigin_Learn_Dialog {
 		wp_enqueue_style( 'siteorigin-learn', plugin_dir_url( __FILE__ ) . 'css/learn.css', array( ) );
 
 		wp_localize_script( 'siteorigin-learn', 'soLearn', array(
-			'courses' => $this->get_courses(),
+			'lessons' => $this->get_lessons(),
 		) );
-	}
-
-	public static function get_youtube_iframe( $video_id ) {
-		return '<iframe src="https://www.youtube.com/embed/' . urlencode( $video_id ) . '?ecver=2&autoplay=1" width="640" height="360" frameborder="0" style="width:100%;height:100%;" allowfullscreen></iframe>';
 	}
 }

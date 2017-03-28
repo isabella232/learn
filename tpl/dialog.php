@@ -29,7 +29,7 @@ $user = wp_get_current_user();
 			<div class="form-submit">
 				<input type="submit" class="button-primary" value="<?php esc_attr_e( 'Sign Up', 'siteorigin-panels' ) ?>" />
 			</div>
-			<input type="hidden" name="course_id" value="" />
+			<input type="hidden" name="lesson_id" value="" />
 		</form>
 		<div class="form-description"></div>
 

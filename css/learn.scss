@@ -109,10 +109,12 @@
 				}
 			}
 			.form-submit {
-				flex: 1;
+				flex: 1.5;
 
 				input {
-					margin-bottom: 3px;
+					margin-bottom: 1px;
+					padding: 3px 8px;
+					height: auto;
 				}
 			}
 
