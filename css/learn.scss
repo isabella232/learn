@@ -81,21 +81,21 @@
 		.signup-form {
 			display: flex;
 			align-items: flex-end;
-			padding: 20px;
+			padding: 15px 20px;
 			background-color: #f8f8f8;
 			border: 1px solid #e0e0e0;
 			margin-top: 25px;
 
 			.form-field {
-				flex: 2;
+				flex: 2.5;
 				margin-right: 20px;
 
 				label{
-					color: #666;
+					color: #777;
 					display: block;
 					margin-bottom: 8px;
 					text-align: center;
-					font-size: 0.9em;
+					font-size: 0.85em;
 					font-weight: 500;
 				}
 
