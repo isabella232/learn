@@ -1,12 +1,8 @@
-<svg width="159px" height="159px" viewBox="561 281 159 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<defs>
-		<circle id="path-1" cx="79.5" cy="79.5" r="79.5"></circle>
-		<mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="159" height="159" fill="white">
-			<use xlink:href="#path-1"></use>
-		</mask>
-	</defs>
-	<g id="Play-Button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(561.000000, 281.000000)" stroke-opacity="0.7">
-		<use id="Oval" stroke="#000000" mask="url(#mask-2)" stroke-width="20" fill-opacity="0.06" fill="#FFFFFF" xlink:href="#path-1"></use>
-		<path d="M63.0036133,38.1193756 C60.7311138,36.5541198 58.8888889,37.5317659 58.8888889,40.279905 L58.8888889,118.489677 C58.8888889,121.248161 60.7359982,122.212098 63.0036133,120.650207 L117.970211,82.7902286 C120.700788,80.9094575 120.701169,77.8603873 117.970211,75.9793537 L63.0036133,38.1193756 Z" id="Path-2" stroke="#000000" stroke-width="12"></path>
+<svg width="1282px" height="75px" viewBox="-1 645 1282 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs></defs>
+	<g id="Player" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1.000000, 645.000000)">
+		<rect id="progress" fill-opacity="0.658599411" fill="#6E6E6E" x="0.870679256" y="0.113680697" width="1280.12932" height="74.8863193"></rect>
+		<rect id="button-wrapper" fill="#3B3B3B" x="0.870679256" y="0.113680697" width="99.0100022" height="74.8863193"></rect>
+		<path d="M40.5481694,22.2810105 C39.6931391,21.6920814 39,22.0599217 39,23.0939119 L39,52.5204207 C39,53.5583032 39.6949768,53.9209855 40.5481694,53.3333224 L61.2294094,39.0884658 C62.2567919,38.3808237 62.2569352,37.2336078 61.2294094,36.525867 L40.5481694,22.2810105 Z" id="button" fill="#FFFFFF"></path>
 	</g>
 </svg>
