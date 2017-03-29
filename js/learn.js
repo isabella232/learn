@@ -23,12 +23,11 @@ jQuery( function( $ ){
 				.find( '.main-poster' ).hide().attr( 'src', lesson.poster ).fadeIn( ).end()
 				.find( '.learn-description' ).html( lesson.description ).end()
 				.find( '.form-description' ).html( lesson.form_description ).end()
-				.find( 'input[name="lesson_id"]' ).val( lessonId ).end();
-
-			dialog.css({
-				'margin-top': - dialog.outerHeight() / 2,
-				'margin-left': - dialog.outerWidth() / 2,
-			});
+				.find( 'input[name="lesson_id"]' ).val( lessonId ).end()
+				.css({
+					'margin-top': - dialog.outerHeight() / 2,
+					'margin-left': - dialog.outerWidth() / 2,
+				});
 		}
 	} );
 
