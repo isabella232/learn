@@ -14,7 +14,6 @@ $user = wp_get_current_user();
 		<div class="video-iframe">
 		</div>
 
-		<h3 class="learn-title"></h3>
 		<p class="learn-description"></p>
 
 		<form class="signup-form" method="post" action="<?php echo esc_url( SiteOrigin_Learn_Dialog::SUBMIT_URL ) ?>" target="_blank" data-email-error="<?php esc_attr_e( 'Please enter a valid email', 'siteorigin-panels' ) ?>" >

@@ -21,7 +21,6 @@ jQuery( function( $ ){
 				.find( '.video-iframe' ).hide().end()
 				.find( '.poster-wrapper' ).data( 'video', lesson.video ).end()
 				.find( '.main-poster' ).hide().attr( 'src', lesson.poster ).fadeIn( ).end()
-				.find( '.learn-title' ).text( lesson.title ).end()
 				.find( '.learn-description' ).html( lesson.description ).end()
 				.find( '.form-description' ).html( lesson.form_description ).end()
 				.find( 'input[name="lesson_id"]' ).val( lessonId ).end();
