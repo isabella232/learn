@@ -20,7 +20,8 @@ jQuery( function( $ ){
 			dialog
 				.find( '.video-iframe' ).hide().end()
 				.find( '.poster-wrapper' ).data( 'video', lesson.video ).end()
-				.find( '.main-poster' ).hide().attr( 'src', lesson.poster ).fadeIn( ).end()
+				.find( '.video-title' ).html( lesson.title ).end()
+				.find( '.main-poster' ).hide().attr( 'src', lesson.poster ).show( ).end()
 				.find( '.learn-description' ).html( lesson.description ).end()
 				.find( '.form-description' ).html( lesson.form_description ).end()
 				.find( 'input[name="lesson_id"]' ).val( lessonId ).end()

@@ -8,6 +8,7 @@ $user = wp_get_current_user();
 	<div id="siteorigin-learn-dialog">
 
 		<div class="poster-wrapper">
+			<h4 class="video-title"></h4>
 			<img src="" width="640px" height="360px" class="main-poster" />
 			<img src="<?php echo plugin_dir_url( __FILE__ ) . '../img/play.svg' ?>" width="48px" height="48px" class="play-button" />
 		</div>
