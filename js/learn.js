@@ -75,4 +75,12 @@ jQuery( function( $ ){
 			.find( '.poster-wrapper' ).hide().end()
 			.find( '.video-iframe' ).show().html( getWistiaEmbed( $( '#siteorigin-learn .poster-wrapper' ).data( 'video' ) ) );
 	} );
+
+    $(document).keyup(function(e) {
+		// when escape is pressed
+		if ( e.keyCode === 27 && $( '#siteorigin-learn-overlay' ).is( ':visible' ) ) {
+			e.preventDefault();
+			$( '#siteorigin-learn .learn-close' ).click();
+		}
+    });
 } );
