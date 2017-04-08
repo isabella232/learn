@@ -57,15 +57,42 @@
 				bottom: 0;
 				left: 0;
 				width: 640px;
-				height: 38px;
-
-				transition: opacity 0.35s;
-
-				opacity: 0.90;
+				height: 58px;
 			}
 
-			&:hover .play-button {
-				opacity: 1;
+			.video-play-info {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba( 0,0,0,0.75 );
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+				transition: 0.25s;
+
+				.video-play-info-text {
+					text-align: center;
+					font-size: 1.8em;
+					color: rgba( 255,255,255,0.95 );
+
+					small {
+						display: block;
+						margin-top: 0.8em;
+						font-size: 0.65em;
+						font-weight: 200;
+					}
+
+				}
+			}
+
+			&:hover {
+				.video-play-info {
+					opacity: 1;
+				}
 			}
 		}
 
