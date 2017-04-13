@@ -7,8 +7,9 @@ $user = wp_get_current_user();
 	<div id="siteorigin-learn-overlay"></div>
 	<div id="siteorigin-learn-dialog">
 
+        <h4 class="video-title"></h4>
+
 		<div class="poster-wrapper">
-			<h4 class="video-title"></h4>
 			<img src="" width="640px" height="360px" class="main-poster" />
 
             <div class="video-play-info">
