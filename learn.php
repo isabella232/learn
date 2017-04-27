@@ -42,6 +42,18 @@ class SiteOrigin_Learn_Dialog {
 		wp_localize_script( 'siteorigin-learn', 'soLearn', array(
 			'lessons' => $this->get_lessons(),
 		) );
+		
+		// These strings should be filtered and translated by the calling plugin.
+		$dialog_strings = apply_filters( 'siteorigin_learn_strings', array(
+			'watch_video' => 'Watch Intro Video',
+			'loaded_from_vimeo' => 'Loaded from Vimeo Servers',
+			'valid_email' => 'Please enter a valid email address.',
+			
+			'your_name' => 'Your Name',
+			'your_email' => 'Your Email',
+			'sign_up' => 'Sign Up',
+			'close' => 'Close',
+		) );
 
 		include plugin_dir_path( __FILE__ ) . 'tpl/dialog.php';
 	}
