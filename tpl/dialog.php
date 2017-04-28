@@ -39,7 +39,7 @@ $user = wp_get_current_user();
 				<input type="text" name="email" value="<?php echo ! empty( $user->data->user_email ) ? esc_attr( $user->data->user_email ) : '' ?>" id="siteorigin-learn-email-input" />
 			</div>
 			<div class="form-submit">
-				<input type="submit" class="button-primary" value="<?php esc_attr( $dialog_strings[ 'sign_up' ] ) ?>" />
+				<input type="submit" class="button-primary" value="<?php echo esc_attr( $dialog_strings[ 'sign_up' ] ) ?>" />
 			</div>
 			<input type="hidden" name="lesson_id" value="" />
 		</form>
