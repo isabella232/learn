@@ -4,10 +4,9 @@ $user = wp_get_current_user();
 ?>
 
 <div id="siteorigin-learn" style="display: none;">
-
 	<div id="siteorigin-learn-overlay"></div>
 	<div id="siteorigin-learn-dialog">
-
+		
         <h4 class="video-title"></h4>
 
 		<div class="poster-wrapper">
@@ -15,8 +14,8 @@ $user = wp_get_current_user();
 
             <div class="video-play-info">
                 <div class="video-play-info-text">
-                    <?php esc_html( $dialog_strings[ 'watch_video' ] ) ?>
-                    <small><?php esc_html( $dialog_strings[ 'loaded_from_vimeo' ] ) ?></small>
+                    <?php esc_html_e( $dialog_strings[ 'watch_video' ] ) ?>
+                    <small><?php esc_html_e( $dialog_strings[ 'loaded_from_vimeo' ] ) ?></small>
                 </div>
             </div>
 
