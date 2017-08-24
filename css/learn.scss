@@ -17,7 +17,7 @@
 		top: 50%;
 		left: 50%;
 
-		padding: 30px;
+		padding: 20px 30px;
 		max-width: 640px + 60px;
 		margin-left: -( 640px + 60px ) / 2;
 
@@ -25,6 +25,15 @@
 		margin-top: -200px;
 
 		background-color: #fff;
+
+		.video-title {
+			font-weight: 300;
+			text-align: center;
+			line-height: 1.2em;
+			font-size: 22px;
+			color: #555;
+			margin: 0 0 20px 0;
+		}
 
 		.poster-wrapper {
 			cursor: pointer;
@@ -39,21 +48,45 @@
 
 			.play-button {
 				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: 80px;
-				height: 80px;
-
-				margin-top: -40px;
-				margin-left: -40px;
-
-				transition: opacity 0.35s;
-
-				opacity: 0;
+				bottom: 0;
+				left: 0;
+				width: 640px;
+				height: 58px;
 			}
 
-			&:hover .play-button {
-				opacity: 1;
+			.video-play-info {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba( 0,0,0,0.75 );
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+				transition: 0.25s;
+
+				.video-play-info-text {
+					text-align: center;
+					font-size: 1.8em;
+					color: rgba( 255,255,255,0.95 );
+
+					small {
+						display: block;
+						margin-top: 0.8em;
+						font-size: 0.65em;
+						font-weight: 200;
+					}
+
+				}
+			}
+
+			&:hover {
+				.video-play-info {
+					opacity: 1;
+				}
 			}
 		}
 
@@ -65,41 +98,36 @@
 			}
 		}
 
-		.learn-title {
-			text-align: center;
-			font-size: 1.5em;
-			color: #474747;
-			font-weight: normal;
-			margin: 25px 0 20px 0;
-		}
-
 		.learn-description {
 			color: #666;
 			font-weight: 300;
-			margin: 20px auto;
-			width: 80%;
+			margin: 25px auto;
 			text-align: center;
 		}
 
 		.signup-form {
 			display: flex;
 			align-items: flex-end;
-			padding: 20px;
+			padding: 15px 20px;
 			background-color: #f8f8f8;
 			border: 1px solid #e0e0e0;
 			margin-top: 25px;
 
 			.form-field {
-				flex: 2;
+				flex: 2.5;
 				margin-right: 20px;
 
 				label{
-					color: #666;
+					color: #777;
 					display: block;
 					margin-bottom: 8px;
 					text-align: center;
-					font-size: 0.9em;
+					font-size: 0.85em;
 					font-weight: 500;
+
+					@media (max-height: 900px)  {
+						display: none;
+					}
 				}
 
 				input {
@@ -109,10 +137,12 @@
 				}
 			}
 			.form-submit {
-				flex: 1;
+				flex: 1.5;
 
 				input {
-					margin-bottom: 3px;
+					margin-bottom: 1px;
+					padding: 3px 8px;
+					height: auto;
 				}
 			}
 
@@ -134,13 +164,15 @@
 		}
 
 		.learn-close {
-			margin: 20px auto 0 auto;
-			text-align: center;
-			display: block;
+			display: inline-block;
 			cursor: pointer;
 			font-weight: bold;
 			font-size: 0.9em;
+			padding: 4px;
 			color: #666;
+			position: absolute;
+			top: 4px;
+			right: 8px;
 		}
 	}
 
