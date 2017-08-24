@@ -19,7 +19,7 @@ $user = wp_get_current_user();
                 </div>
             </div>
 
-            <img src="<?php echo siteorigin_panels_url( 'img/play.svg' ) ?>" width="640px" height="58px" class="play-button" />
+            <img src="<?php echo siteorigin_panels_url( 'learn/img/play.svg' ) ?>" width="640px" height="58px" class="play-button" />
 		</div>
 		<div class="video-iframe">
 		</div>
